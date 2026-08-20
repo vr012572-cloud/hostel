@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPG Hostel | Student Life</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-orb orb1"></div><div class="bg-orb orb2"></div>
+  <nav class="nav">
+    <div class="brand"><span class="brand-mark">G</span><div><b>GPG HOSTEL</b><small>Student Life • Community • Growth</small></div></div>
+    <div class="links">
+      <a href="#home">Home</a><a href="#features">Features</a><a href="#facilities">Facilities</a><a href="#mess">Mess</a><a href="#sports">Sports</a><a href="#celebrations">Celebrations</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+    </div>
+    <button class="nav-btn" onclick="document.querySelector('#gallery').scrollIntoView({behavior:'smooth'})">Explore ↗</button>
+  </nav>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <div class="pill">✨ A place to live, learn & celebrate</div>
+        <h1>More than a hostel.<br><span>It's your second home.</span></h1>
+        <p>A modern student community with comfortable facilities, delicious mess food, sports, transport and unforgettable celebrations.</p>
+        <div class="hero-actions"><a class="primary" href="#facilities">Discover Facilities</a><a class="secondary" href="#gallery">View Gallery</a></div>
+        <div class="stats"><div><b>24×7</b><span>Security</span></div><div><b>6+</b><span>Facilities</span></div><div><b>100%</b><span>Community</span></div></div>
+      </div>
+      <div class="hero-visual">
+        <div class="glass-card floating-card top"><span>🏆</span><div><b>Student Life</b><small>Learn • Play • Grow</small></div></div>
+        <div class="cube"><div class="cube-face front">GPG</div><div class="cube-face back">HOME</div><div class="cube-face right">LIFE</div><div class="cube-face left">2026</div><div class="cube-face top-face">♥</div><div class="cube-face bottom-face">★</div></div>
+        <div class="glass-card floating-card bottom"><span>🍛</span><div><b>Daily Mess</b><small>Fresh & hygienic meals</small></div></div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="section-head"><div><span class="eyebrow">WHY GPG</span><h2>Everything you need.<br><span>All in one place.</span></h2></div><p>Designed around student comfort, safety, recreation and community.</p></div>
+      <div id="featureGrid" class="feature-grid"></div>
+    </section>
+
+    <section id="facilities" class="section dark-section">
+      <div class="section-head"><div><span class="eyebrow">FACILITIES</span><h2>Built for a <span>better</span> student life.</h2></div></div>
+      <div class="facility-grid">
+        <article class="facility large"><div class="facility-content"><span>🚌</span><h3>Bus & Transport</h3><p>Convenient transportation support for daily college travel and important routes.</p></div></article>
+        <article class="facility" onclick="document.querySelector('#mess').scrollIntoView({behavior:'smooth'})" style="cursor:pointer"><span>🍛</span><h3>Mess & Food</h3><p>Comfort food, daily meals and a friendly dining space.</p><small class="facility-link">View food photos →</small></article>
+        <article class="facility" onclick="document.querySelector('#sports').scrollIntoView({behavior:'smooth'})" style="cursor:pointer"><span>🏏</span><h3>Sports Ground</h3><p>Cricket, football, volleyball and outdoor activities.</p><small class="facility-link">View sports ground →</small></article>
+        <article class="facility" onclick="document.querySelector('#celebrations').scrollIntoView({behavior:'smooth'})" style="cursor:pointer"><span>🎉</span><h3>Ganpati Celebration</h3><p>Festivals, cultural programs and memories with friends.</p><small class="facility-link">View celebration photos →</small></article>
+        <article class="facility"><span>📚</span><h3>Study Space</h3><p>Quiet corners to focus on academics and projects.</p></article>
+      </div>
+    </section>
+
+    <section id="mess" class="section dark-section mess-section">
+      <div class="section-head"><div><span class="eyebrow">MESS FACILITY</span><h2>Fresh food.<br><span>Good memories.</span></h2></div><p>A glimpse of the meals served in our hostel mess. Click the Mess & Food facility above to come directly here.</p></div>
+      <div id="messGrid" class="mess-grid"></div>
+    </section>
+
+
+    <section id="sports" class="section dark-section sports-section">
+      <div class="section-head">
+        <div><span class="eyebrow">SPORTS &amp; PLAYGROUND</span><h2>Play. Compete.<br><span>Stay active.</span></h2></div>
+        <p>Our hostel sports ground gives students space for cricket, football, fitness and outdoor activities.</p>
+      </div>
+      <div class="sports-showcase">
+        <div class="sports-photo"><img src="/images/sports-ground.jpg" alt="Hostel Sports Ground"></div>
+        <div class="sports-info">
+          <h3>Our Sports Facilities</h3>
+          <p>Spacious outdoor grounds surrounded by greenery for regular games and practice.</p>
+          <div class="sports-list">
+            <div><span>🏏</span><b>Cricket</b><small>Practice sessions and hostel matches.</small></div>
+            <div><span>⚽</span><b>Football</b><small>Open ground for outdoor games.</small></div>
+            <div><span>🏸</span><b>Badminton</b><small>Recreation and fitness activities.</small></div>
+            <div><span>💪</span><b>Fitness &amp; Health</b><small>Stay active and build a healthy routine.</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="celebrations" class="section dark-section celebrations-section">
+      <div class="section-head"><div><span class="eyebrow">CELEBRATIONS</span><h2>Festivals &amp;<br><span>beautiful memories.</span></h2></div><p>Ganpati celebrations, decorations and colourful evening moments from hostel life.</p></div>
+      <div id="celebrationGrid" class="celebration-grid"></div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="section-head"><div><span class="eyebrow">PHOTO GALLERY</span><h2>Moments that make<br><span>hostel life special.</span></h2></div><button class="secondary" onclick="loadGallery()">Refresh Gallery ↻</button></div>
+      <div id="galleryGrid" class="gallery-grid"></div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div><span class="eyebrow">GET IN TOUCH</span><h2>Have a question?<br><span>Let's connect.</span></h2><p>Built with ❤️ by <b>Vaibhav Rathod</b>.</p></div>
+      <form id="contactForm"><input id="name" placeholder="Your name" required><input id="email" type="email" placeholder="Email address" required><textarea id="message" placeholder="Your message" rows="5" required></textarea><button class="primary" type="submit">Send Message →</button><div id="formMsg"></div></form>
+    </section>
+  </main>
+
+  <footer><div><b>GPG HOSTEL</b><span>Student community • Comfort • Memories</span></div><p>Created by <strong>Vaibhav Rathod</strong> © 2026</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
