@@ -52,4 +52,3 @@ The gallery now uses 6 local photos supplied by Vaibhav Rathod, including the 5 
 - Added the real hostel sports-ground photo as `public/images/sports-ground.jpg`.
 - Sports Ground facility card and navbar link scroll to the Sports section.
 - Sports section includes cricket, football, badminton and fitness information.
-"# hostel" 

@@ -65,6 +65,4 @@ app.post("/api/contact", (req,res)=>{
 
 app.get("*",(req,res)=>res.sendFile(path.join(__dirname,"public","index.html")));
 
-app.listen(PORT, "0.0.0.0", () => {
-  console.log(`Hostel website running on port ${PORT}`);
-});
+app.listen(PORT,()=>console.log(`Hostel website running at http://localhost:${PORT}`));
